@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="yname">Your Name : </label>
+        <input type="text" placeholder="Your name" id="yname" required minlength="3" maxlength="6">
+        <br><br>
+        <label for="email">Email : </label>
+        <input type="email" placeholder="Email Address" id="email">
+        <br><br>
+        <label for="web">Website : </label>
+        <input type="url" placeholder="Your websitte" id="web">
+        <br><br>
+        <label for="pass">Password : </label>
+        <input type="password" placeholder="Your password" id="pass">
+        <br><br>
+        <label for="phone">Mobile : </label>
+        <input type="number" placeholder="Mobile number" id="phone">
+        <br><br>
+        <label for="">Gender : </label>
+        <label for="male">
+            <input type="radio" id="male" name="gender">
+            Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender">
+            Female
+        </label>
+        <br><br>
+        <label for="">Hobbies</label>
+        <label for="reading">
+            <input type="checkbox" id="reading">
+            Reading
+        </label>
+        <label for="writing">
+            <input type="checkbox" id="writing">
+            Writing
+        </label>
+        <label for="coding">
+            <input type="checkbox" id="coding">
+            Coding
+        </label>
+        <br><br>
+        <label for="dob">Date of birth : </label>
+        <input type="date" id="dob">
+        <br><br>
+        <label for="pp">Profile Picture : </label>
+        <input type="file" id="pp">
+        <br><br>
+        <label for="country">Country : </label>
+        <select name="" id="country">
+            <option value="">--SELECT COUNTRY--</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="others">Others</option>
+        </select>
+        <br><br>
+        <label for="cmt">Comments : </label><br>
+        <textarea name="" id="cmt" cols="40" rows="5" placeholder="Your Comments"></textarea>
+        <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
