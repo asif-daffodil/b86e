@@ -1,0 +1,39 @@
+.yunus {
+    font-style: italic;
+}
+
+#dhaka {
+    color: blue;
+}
+
+/* this is a comment */
+
+.myText {
+    color: cornflowerblue;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px black;
+    background: lightblue;
+    line-height: 100px;
+    -webkit-text-stroke: 2px blue;
+    width: max-content;
+    border: 6px solid blue;
+    margin: 40px auto 20px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px blue, 0 0 30px blue inset;
+    border-radius: 20px;
+    outline: 5px solid orange;
+}
+
+b{
+    width: 300px;
+    background: hotpink;
+    display: inline-block;
+}
