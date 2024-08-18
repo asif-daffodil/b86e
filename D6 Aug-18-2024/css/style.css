@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 50vh;
+    background: rgb(75, 72, 228);
+}
+
+.pain {
+    width: 100%;
+    height: 50vh;
+    background: #0866FF;
+}
+
+.rain {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.train {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(to top right, red, white,green);
+}
+
+.gain {
+    width: 100%;
+    height: 50vh;
+    background: radial-gradient(white 100px, black 300px);
+}
+
+.lain {
+    width: 100%;
+    height: 50vh;
+    background: url("../iamges/General\ Announcements-02.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
