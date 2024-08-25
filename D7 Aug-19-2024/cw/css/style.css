@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.faka {
+    min-height: 70vh;
+    background: #ccc;
+}
+
+.dhaka {
+    width: 200px;
+    height: 200px;
+    background: cornflowerblue;
+    position: relative;
+    bottom: -20px;
+    right: -30px;
+    margin-bottom: 100vh;
+}
+
+.kaka {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+.dhanmondi {
+    width: 100px;
+    height: 100px;
+    background: hotpink;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    z-index: 20;
+}
+
+.chaka {
+    width: 100px;
+    height: 100px;
+    background: turquoise;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+}
+
+.chaka:hover {
+    background: tomato;
+}
+
+.ba::before {
+    content: 'Hero ';
+}
+.ba::after {
+    content: 'Mia';
+}
+
+.dhanmondi::before {
+    content: '25%';
+    width: 50px;
+    line-height: 50px;
+    background: black;
+    position: absolute;
+    right: 6px;
+    top: -25px;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.dhanmondi::after {
+    content: attr(data-msg);
+    width: 60px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    border-radius: 12px/50%;
+}
+
+.dhanmondi:hover::before {
+    right: 44px;
+}

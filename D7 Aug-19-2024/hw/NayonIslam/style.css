@@ -1,0 +1,19 @@
+    .b{
+        font-size: 66px;
+        letter-spacing: 7px;
+        font-variant: small-caps;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-text-stroke: 3px dodgerblue;
+        color: white;
+        font-weight: bolder;
+        text-shadow: 3px 3px 3px black;
+        font-style: italic;
+        padding: 20px;
+        width: max-content;
+        margin: auto;
+        border: 8px solid red;
+        outline: 8px dashed green;
+        border-radius: 10px;
+        margin-top: 10% ;
+        box-shadow: 0 0 30px black, 0 0 16px black inset; 
+    } 

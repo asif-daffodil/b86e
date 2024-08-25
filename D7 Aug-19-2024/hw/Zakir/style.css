@@ -1,0 +1,21 @@
+.bd {
+  height: max-content;
+  width: max-content;
+  margin: auto;
+  /* background: #ddd; */
+  padding: 20px 25px;
+  border: 5px solid #1e90ff;
+  border-radius: 10px;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: Arial, sans-serif;
+  font-variant: small-caps;
+  font-style: italic;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 3px #1e90ff;
+  color: white;
+  box-shadow: 0 0 15px #303132, 0 0 15px #090909 inset;
+  text-shadow: 6px 2px 3px black;
+  margin-top: 60px;
+  outline: 5px dashed #1e90ff;
+}
