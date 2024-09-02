@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    display: grid;
+}
+
+.main > div {
+    border: 1px solid #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .main > div {
+        padding: 12px;
+        background: darkred;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .main > div {
+        padding: 20px;
+        background: darkblue;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .main > div {
+        padding: 30px;
+        background: darkmagenta;
+        font-size: 14px;
+    }
+}
+
+.pain {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    animation: shadhin 2s infinite linear;
+}
+
+@keyframes shadhin {
+    0% {
+        transform: scale(1) rotate(0deg);
+        background: red;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        background: green;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        background: red;
+    }
+}

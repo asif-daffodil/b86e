@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.main > div {
+    border: 10px solid black;
+}
+
+.main > div:hover {
+    border: 10px solid blue;
+}
+
+.main > div:first-child {
+    grid-column: 1 / 3;
+}
+
+.main > div:last-child {
+    grid-column: 2 / 4;
+}
+
+.main > div:nth-child(6) {
+    grid-row: 3 / 5;
+}
+
+.pain {
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    display: grid;
+    padding: 20px;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "area1 area2 area3 area3" 
+    "area1 area5 area4 area6" 
+    "area1 area5 area8 area6" 
+    "area7 area7 area8 area9";
+}
+
+.pain > div {
+    border: 1px solid black;
+}
+
+.pain > div:first-child {
+    grid-area: area1;
+}
+
+.pain > div:nth-child(2) {
+    grid-area: area2;
+}
+
+.pain > div:nth-child(3) {
+    grid-area: area3;
+}
+
+.pain > div:nth-child(4) {
+    grid-area: area4;
+}
+
+.pain > div:nth-child(5) {
+    grid-area: area5;
+}
+
+.pain > div:nth-child(6) {
+    grid-area: area6;
+}
+
+.pain > div:nth-child(7) {
+    grid-area: area7;
+}
+
+.pain > div:nth-child(8) {
+    grid-area: area8;
+}
+
+.pain > div:last-child {
+    grid-area: area9;
+}
