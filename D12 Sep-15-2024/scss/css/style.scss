@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$dadaColor : #dadada;
+
+@mixin centerChild ($w, $h) {
+    width: $w;
+    height: $h;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dada {
+    background: $dadaColor;
+    @include centerChild(100%, 100vh);
+    >.baba{
+        background: #bababa;
+        @include centerChild(300px, 300px);
+        >.ami{
+            background: #000;
+            @include centerChild(150px, 150px);
+            >.pola{
+                background: #fff;
+                @include centerChild(75px, 75px);
+            }
+        }
+    }
+}
+
+.container {
+    background: red;
+    width: 200px;
+    height: 200px;
+}
+
+.container2 {
+   @extend .container;
+    background: blue;
+}
