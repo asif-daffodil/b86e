@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'helvetica';
+    src: url("../fonts/Helvetica.ttf");
+}
+
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url("../fonts/Helvetica-Bold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica';
+}
+
+
+.container{
+    width: 850px;
+    height: 1800px;
+    margin: auto;
+    >.header{
+        height: 145px;
+        background: #0085cf;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+    >.banner{
+        height: 390px;
+        background-image: url("../images/banner.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        display: grid;
+        place-items: center;
+        >.events{
+            width: 560px;
+            height: 160px;
+            background: rgba(255,255,255,0.8);
+            border: 1px solid #0085cf;
+            border-radius: 15px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 25px;
+            >h1{
+                color: #0085cf;
+                font-size: 35px;
+                font-family: 'helvetica-bold';
+            }
+            >p{
+                font-size: 23px;
+            }
+        }
+    }
+    >.activities{
+        >h2{
+            line-height: 65px;
+            font-size: 30px;
+            font-family: helvetica-bold;
+            color: #0085cf;
+            text-align: center;
+        }
+        >.service{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            direction: rtl;
+            grid-gap: 52px;
+            padding: 0px 52px;
+            >div{
+                >h3{
+                    font-size: 20px;
+                    font-family: helvetica-bold;
+                    margin: 16px;
+                }
+                >button{
+                    width: 112px;
+                    height: 31px;
+                    background: #0085cf;
+                    color: #fff;
+                    border-width: 0;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}
