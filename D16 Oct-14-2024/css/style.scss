@@ -1,0 +1,21 @@
+.carousel-caption{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.myForm{
+    background: rgba($color: #fff, $alpha: 0.8);
+}
+
+.myMap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: grayscale(60%) brightness(80%);
+}
