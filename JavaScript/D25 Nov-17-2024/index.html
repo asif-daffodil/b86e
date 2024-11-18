@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1" onclick="btnClicked()" onmouseout="btnHovered()">Click Me</button>
+    <button id="btn2">Button 2</button>
+    <br><br>
+
+
+    <input type="text" id="sname" placeholder="Write Student Name">
+    <button id="snbtn">Show Name</button>
+    <div id="snoutput"></div>
+    
+    <script>
+        const btnClicked = () => {
+            document.getElementById("btn1").innerHTML = "Hello World";
+        }
+        const btnHovered = () => {
+            document.getElementById("btn1").innerHTML = "Click Me";
+        }
+
+        const btn2 = document.getElementById("btn2");
+
+        btn2.addEventListener("click", () => {
+            alert("Button 2 Clicked");
+        });
+
+        const snbtn = document.getElementById("snbtn");
+        const snoutput = document.getElementById("snoutput");
+
+        snbtn.addEventListener("click", () => {
+            const sname = document.getElementById("sname");
+            snoutput.innerHTML = sname.value;
+            sname.value = "";
+        });
+
+    </script>
+</body>
+</html>

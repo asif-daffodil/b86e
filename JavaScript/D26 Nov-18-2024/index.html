@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="pain">
+            <h1>Add Student</h1>
+            <form action="" method="post" id="studentForm">
+                <input type="text" placeholder="Student Name" name="sname">
+                <div class="err" id="errName"></div>
+                <input type="text" placeholder="Student Age" name="sage">
+                <div class="err" id="errAge"></div>
+                <label for="">Gender</label>
+                <input type="radio" name="sgender" value="Male" />Male
+                <input type="radio" name="sgender" value="Female" />Female
+                <div class="err" id="errGender"></div>
+                <input type="text" name="smobile" placeholder="Mobile Number">
+                <div class="err" id="errMobile"></div>
+                <button type="submit">Add Student</button>
+            </form>
+        
+            <div id="showStudent"></div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
