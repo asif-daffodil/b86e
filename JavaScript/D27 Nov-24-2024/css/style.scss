@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#myDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    #todo{
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #000;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+        border-radius: 6px;
+        >#todoForm{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            >input{
+                padding: 10px;
+                border: 1px solid #000;
+                border-radius: 6px;
+                width: 70%;
+            }
+            >button{
+                padding: 10px;
+                border: none;
+                background-color: #000;
+                color: #fff;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+        >#taskList{
+            list-style-position: inside;
+            >li{
+                padding: 10px;
+                border-bottom: 1px solid #000;
+                margin-top: 10px;
+                position: relative;
+                padding-right: 40px;
+                >button{
+                    background-color: red;
+                    color: #fff;
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translate(50%, -50%);
+                }
+            }
+        }
+    }
+}

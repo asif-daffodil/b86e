@@ -49,8 +49,8 @@ studentForm.addEventListener('submit', e => {
         crrMobile = true;
     }
 
-    if(crrName && crrAge && crrGender){
-        showStudent.textContent =`Name: ${sname}, Age: ${sage}, Gender: ${sgender}`;
+    if(crrName && crrAge && crrGender && crrMobile){
+        showStudent.textContent =`Name: ${sname}, Age: ${sage}, Gender: ${sgender}, Mobile: ${smobile}`;
         studentForm.reset();
     }
 
