@@ -10,11 +10,9 @@ days.forEach(day => {
     week.appendChild(div);
 });
 
-const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
 const timeFunc = () => {
     const d = new Date();
-    date.textContent = d.getDate() + " / " + months[d.getMonth()] + " / " + d.getFullYear();
+    date.textContent = d.getDate() + " / " + d.toLocaleString('default', {month: 'short'}) + " / " + d.getFullYear();
     time.textContent = d.toLocaleString('default', {hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true});
     week.children[d.getDay()].style.cssText = `
     color: #fff; 
