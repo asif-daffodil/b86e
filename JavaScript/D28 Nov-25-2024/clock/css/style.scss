@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    >.clock{
+        width: 450px;
+        padding: 20px;
+        border: 1px solid #000;
+        margin: auto;
+        text-align: center;
+        box-shadow: 0 0 10px 6px #000;
+        border-radius: 6px;
+        >.date{
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        >.time{
+            font-size: 50px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        >.week {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            >div{
+                font-size: 14px;
+                padding: 6px;
+                border-radius: 6px;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}
