@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form Validation</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+            <div class="main">
+            <div class="title">Form Validation</div>
+            <form action="" method="post" id="userform">
+                <!-- User Name -->     
+                <label for="username"> User Name</label>
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="type your name" name="uname">
+                <div class="error" id="errName"></div>
+            
+                <!-- Email -->
+                <label for="email">Your Email</label>
+                <i class="far fa-envelope"></i>
+                <input type="email"  placeholder="type your email" name="uemail">
+                <div class="error" id="errEmail"></div>
+            
+                <!-- Mobile Number -->
+                <label for="mobile">Mobile Number</label>
+                <i class="fas fa-mobile-alt"></i>
+                <input type="tel" placeholder="type your mobile number" name="umobile">
+                <div class="error" id="errMobile"></div>
+
+                <!-- Gender -->
+                <label for="gender">Gender</label>
+                <input type="radio" name="ugender" value="Male" />Male
+                <input type="radio" name="ugender" value="Female" />Female
+                <input type="radio" name="ugender" value="Others" />Others
+                <div class="error" id="errGender"></div>
+
+                <!-- Age -->
+                <label for="age">Age</label>
+                <input type="text" placeholder="type your age" name="uage">
+                <div class="error" id="errAge"></div>
+            
+                <!-- Password -->
+                <label for="password">Password</label>
+                <i class="fas fa-lock"></i>
+                <input type="password"  placeholder="password" name="upassword">
+                <div class="error" id="errPassword"></div>
+            
+            <!-- button -->
+            <button id="btn" type="submit">Submit</button>
+        </form>
+        <div id="showInfo"></div>
+
+        </div>
+    </div>
+    
+
+
+
+    <script src="./Javascript/script.js"></script>
+</body>
+</html>

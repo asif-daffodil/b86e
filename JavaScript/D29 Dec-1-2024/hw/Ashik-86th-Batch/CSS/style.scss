@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+$primary-color: #3498db;
+$secondary-color: #2980b9;
+$error-color: #e74c3c;
+$success-color: #2ecc71;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.container {
+    width: 400px;
+    height: 100vh;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.8) ;
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-family: serif;
+    border-bottom: #000 solid 2px;
+}
+
+form {
+    width: 100%;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: $secondary-color;
+}
+
+.error {
+    color: $error-color;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.success {
+    color: $success-color;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.failure-icon,
+.success-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: $error-color;
+    cursor: pointer;
+}
+
+.success-icon {
+    color: $success-color;
+}
+
+#showInfo {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align:justify;
+    font-weight: bold;
+    color: hotpink;
+    font-size: 18px;
+    
+}
