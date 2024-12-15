@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="dhaka">
+        Dhaka is the capital of Bangladesh.
+    </div>
+    <br>
+    <br>
+    <button id="hideDhk">Dhaka Button</button>
+    <button id="showDhk">Show Dhaka</button>
+    <button id="toggleDhk">Toggle Dhaka</button>
+    <br>
+    <br>
+    <button id="fadeInDhaka">Fade-in Dhaka</button>
+    <button id="fadeOutDhaka">Fade-out Dhaka</button>
+    <button id="fadeToggleDhaka">Fade-toggle Dhaka</button>
+    <br>
+    <br>
+    <button id="slideUpBtn">Slide-up Dhaka</button>
+    <button id="slideDownBtn">Slide-down Dhaka</button>
+    <button id="slideToggleBtn">Slide-toggle Dhaka</button>
+    <button id="multipleBtn">Multiple Action</button>
+    
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        $("#hideDhk").on("click", function(){
+            $("#dhaka").hide(500);
+        })
+        $("#showDhk").on("click", function(){
+            $("#dhaka").show(500);
+        });
+        $("#toggleDhk").on("click", function(){
+            $("#dhaka").toggle(500);
+        });
+        $("#fadeInDhaka").on("click", function(){
+            $("#dhaka").fadeIn(500);
+        });
+        $("#fadeOutDhaka").on("click", function(){
+            $("#dhaka").fadeOut(500);
+        });
+        $("#fadeToggleDhaka").on("click", function(){
+            $("#dhaka").fadeToggle(500);
+        });
+        $("#slideUpBtn").on("click", function(){
+            $("#dhaka").slideUp(500);
+        });
+        $("#slideDownBtn").on("click", function(){
+            $("#dhaka").slideDown(500);
+        });
+        $("#slideToggleBtn").on("click", function(){
+            $("#dhaka").slideToggle(500);
+        });
+        $("#multipleBtn").on("click", function(){
+            $("#dhaka").hide(500).show(500).fadeOut(500).fadeIn(500).slideUp(500).slideDown(500);
+        });
+    </script>
+</body>
+</html>
