@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modern Repeating Countdown Timer App Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <div class="limit">
+          <button class="limit-button">Countdown with limit date</button>
+          <p> <small>
+            Countdown with limit date allows you to select the target date, and it will stop when the countdown reaches zero.
+          </small></p>
+        </div>
+        <div class="repeat">
+          <button class="repeat-button">Countdown with repeat</button>
+          <p> <small>
+            Countdown with repeat, allows you to type the number of days you want to countdown. Once the counter reaches zero it will start over.
+          </small></p>
+        </div>
+      </div>
+      <div class="form">
+        <form>
+          <button class="begin" type="submit">Start Countdown</button>
+        </form>
+      </div>
+      <div class="wrapper">
+        <div class="item">
+          <div class="number">
+            <span id="days">
+              00
+            </span>
+          </div>
+          <span>Days</span>
+        </div>
+        <div class="item">
+          <div class="number">
+            <span id="hours">
+              00
+            </span>
+          </div>
+          <span>Hours</span>
+        </div>
+        <div class="item">
+          <div class="number">
+            <span id="minutes">
+              00
+            </span>
+          </div>
+          <span>Minutes</span>
+        </div>
+        <div class="item">
+          <div class="number">
+            <span id="seconds">
+              00
+            </span>
+          </div>
+          <span>Seconds</span>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src='js/app.js'></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </body>
+</html>

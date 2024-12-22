@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown</title>
+    <link rel="stylesheet" href="./plugins/repeating-countdown-timer/css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <form>
+                <button class="begin" type="submit">Start Countdown</button>
+            </form>
+        </div>
+        <div class="wrapper">
+            <div class="item">
+                <div class="number">
+                    <span id="days">
+                        00
+                    </span>
+                </div>
+                <span>Days</span>
+            </div>
+            <div class="item">
+                <div class="number">
+                    <span id="hours">
+                        00
+                    </span>
+                </div>
+                <span>Hours</span>
+            </div>
+            <div class="item">
+                <div class="number">
+                    <span id="minutes">
+                        00
+                    </span>
+                </div>
+                <span>Minutes</span>
+            </div>
+            <div class="item">
+                <div class="number">
+                    <span id="seconds">
+                        00
+                    </span>
+                </div>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./plugins/repeating-countdown-timer/js/app.js"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+
+</html>
